@@ -1,16 +1,12 @@
 import './styling/App.css';
-import {Link, Route, Routes, Router } from "react-router-dom";
-import { useState, useEffect, useLayoutEffect, useRef } from "react"
+import { useRef } from "react"
 import "bootswatch/dist/minty/bootstrap.min.css"
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Offcanvas from 'react-bootstrap/Offcanvas';
 import About from './sections/About'
 import Projects from './sections/Projects';
 import Resume from './sections/Resume';
 import Contact from './sections/Contact';
 import style from "./styling/Header.module.css"
+import "../src/styling/App.css"
 
 function App() {
 
@@ -26,42 +22,31 @@ function App() {
     });
   };
 
+
   return (
 
     <div className="App">
-       <header className={style.header}>
-            <div className={style.container}>
-                <div className={style.navContainer}>
-                    <h1>Tiffany Codes</h1>
+       <header className='header'>
+          <h1 className='title'>Tiffany Codes</h1>
+            <nav className="navbar">
+              <ul className="nav-menu">
+                
+                <li className="nav-link" onClick={() => scrollToSection(about)}>About</li>
+                <li className="nav-link" onClick={() => scrollToSection(projects)}>Projects</li>
+                <li className="nav-link" onClick={() => scrollToSection(resume)}>Resume</li>
+                <li className="nav-link" onClick={() => scrollToSection(contact)}>Contact</li>
+              
+              </ul>
 
-                    <nav>
-                        <ul>
-                          <li>
-                            <button onClick={() => scrollToSection(about)}>About</button>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <button onClick={() => scrollToSection(projects)}>Projects</button>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <button onClick={() => scrollToSection(resume)}>Resume</button>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <button onClick={() => scrollToSection(contact)}>Contact</button>
-                          </li>
-                        </ul>
-                    </nav>
-                    
-                </div>
+            </nav>
+
+            <div className="hamburger">
+              <span className="bar"></span>
+              <span className="bar"></span>
+              <span className="bar"></span>
             </div>
-
+               
         </header>
-      {/* <Header /> */}
 
       <div ref={about} className="about">
         <About />
@@ -71,11 +56,11 @@ function App() {
         <Projects />
       </div>
       
-      <div ref={resume} className="Resume">
+      <div ref={resume} className="resume">
         <Resume />
       </div>
 
-      <div ref={contact} className="Contact">
+      <div ref={contact} className="contact">
         <Contact />
       </div>
 

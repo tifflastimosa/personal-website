@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
 
-header {
-  padding-left: 2%;
-  padding-right: 2%;;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 
 .title {
   font-family: 'Qwitcher Grypen';
@@ -15,14 +17,6 @@ header {
   text-decoration: none;
 }
 
-.title:hover {
-  color: #479B84 !important;
-}
-
-.nav-links:hover {
-  color: #479B84 !important;
-}
-
 .App {
   text-align: center;
 }
@@ -32,7 +26,12 @@ header {
 }
 
 .projects {
-  margin-top: 300px;
+  margin-top: 600px;
+  height: 600px;
+}
+
+.resume {
+  margin-top: 600px;
   height: 600px;
 }
 
@@ -41,9 +40,163 @@ header {
   height: 600px;
 }
 
-@media (max-width: 400px) {
+.hamburger {
+  position: absolute;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px; 
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.header {
+  background: white;
+  color: black;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+}
+
+.header {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.navbar {
+  background-color: white;
+  min-height: 70px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+ 
+}
+
+
+.header h1 {
+  font-size: 2rem;
+  cursor: pointer;
+  color: black;
+}
+
+/* .header nav {
+  display: flex; 
+  gap: 2.5rem;
+} */
+
+.header li {
+  font-size: 1rem;
+  cursor: pointer;
+  color: black;
+  background: none;
+  border: none;
+  position: relative;
+}
+
+.header li::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #479B84;
+  left: 0;
+  /* add highlight link at the bottom */
+  bottom: -5px;
+  transform: scale(0,1);
+  transition: transform 0.50s ease;
+  /* changes direction of the underline */
+  transform-origin: 0 100%; 
+}
+
+.header li:hover::before {
+  transform: scale(1,1);
+}
+
+.header li:hover::before {
+  color: #479B84;
+  transition: transform 1s ease;
+}
+
+@media (max-width: 700px) {
   .header {
+    margin: 1rem;
+    box-align: center;
+    /* background-color: black; */
+  }
+
+  .title {
+    width: 100%;
+    font-size: 50px !important;
+    color: blue;
+  }
+
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+    margin: 30px;
+  }
+
+  .hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+    color: white;
+  }
+
+  .navbar-links li a {
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li a:hover {
+    color: #10876B;
+  }
+
+}
+
+/* @media (max-width: 400px) {
+  .title {
     font-size: 45px;
     margin-top: 20px;
   }
-}
+} */
