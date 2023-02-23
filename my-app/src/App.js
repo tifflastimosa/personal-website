@@ -7,6 +7,7 @@ import Resume from './sections/Resume';
 import Contact from './sections/Contact';
 import style from "./styling/Header.module.css"
 import "../src/styling/App.css"
+import "../src/sections/script.js"
 
 function App() {
 
@@ -22,12 +23,23 @@ function App() {
     });
   };
 
+  const getHamburger = () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu= document.querySelector(".nav-menu");
+    
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    })
+
+  };
+
 
   return (
 
     <div className="App">
        <header className='header'>
-          <h1 className='title'>Tiffany Codes</h1>
+          <h1 className='title' onClick={() => scrollToSection(about)}>Tiffany Codes</h1>
             <nav className="navbar">
               <ul className="nav-menu">
                 
@@ -39,8 +51,8 @@ function App() {
               </ul>
 
             </nav>
-
-            <div className="hamburger">
+        
+            <div className="hamburger" ref={getHamburger}>
               <span className="bar"></span>
               <span className="bar"></span>
               <span className="bar"></span>

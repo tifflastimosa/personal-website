@@ -11,7 +11,7 @@
   font-family: 'Qwitcher Grypen';
   font-style: bold;
   font-weight: 700;
-  font-size: 100px !important;
+  font-size: 80px !important;
   margin-left: 2%;
   color: black !important;
   text-decoration: none;
@@ -38,24 +38,6 @@
 .contact {
   margin-top: 600px;
   height: 600px;
-}
-
-.hamburger {
-  position: absolute;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 20px; 
-}
-
-.bar {
-  height: 3px;
-  width: 100%;
-  background-color: black;
-  transition: all 0.3s ease-in-out;
-  border-radius: 10px;
 }
 
 .header {
@@ -93,17 +75,20 @@
  
 }
 
-
-.header h1 {
-  font-size: 2rem;
+.hamburger {
+  display: none;
   cursor: pointer;
-  color: black;
 }
 
-/* .header nav {
-  display: flex; 
-  gap: 2.5rem;
-} */
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
 
 .header li {
   font-size: 1rem;
@@ -139,64 +124,80 @@
 }
 
 @media (max-width: 700px) {
-  .header {
-    margin: 1rem;
-    box-align: center;
-    /* background-color: black; */
-  }
-
-  .title {
-    width: 100%;
-    font-size: 50px !important;
-    color: blue;
-  }
-
   .hamburger {
-    display: flex;
-    cursor: pointer;
-    margin: 30px;
+    display: block;
   }
 
-  .hamburger .bar {
-    height: 3px;
-    width: 100%;
-    background-color: black;
-    transition: all 0.3s ease-in-out;
-    border-radius: 10px;
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
   }
 
-  .navbar-links {
-    display: none;
-    width: 100%;
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
   }
 
-  .navbar-links ul {
-    width: 100%;
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 100px;
+    gap: 0;
     flex-direction: column;
-  }
-
-  .navbar-links li {
+    background-color: white;
+    width: 100%;
     text-align: center;
-    color: white;
+    transition: 0.5s;
+    opacity: 90%;
   }
 
-  .navbar-links li a {
-    padding: .5rem 1rem;
+  .nav-links {
+    margin: 16px 0;
   }
 
-  .navbar-links.active {
-    display: flex;
-  }
-
-  .navbar-links li a:hover {
-    color: #10876B;
+  .nav-menu.active {
+    left: 0;
   }
 
 }
 
-/* @media (max-width: 400px) {
+@media (max-width: 900px) {
   .title {
-    font-size: 45px;
-    margin-top: 20px;
+    font-family: 'Qwitcher Grypen';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 60px !important;
+    margin-left: 2%;
+    color: black !important;
+    text-decoration: none;
   }
-} */
+  
+}
+
+@media (max-width: 800px) {
+  .title {
+    font-family: 'Qwitcher Grypen';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 50px !important;
+    margin-left: 2%;
+    color: black !important;
+    text-decoration: none;
+  }
+  
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-family: 'Qwitcher Grypen';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 50px !important;
+    margin-left: 2%;
+    color: black !important;
+    text-decoration: none;
+  }
+}
+
