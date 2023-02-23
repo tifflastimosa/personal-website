@@ -6,11 +6,11 @@ const Contact = () => {
   return (
     
     <section id="contactSection" className="secondary-selection">
-  <div className="container">
-                <h2>Contact</h2>
+      <div className="container">
+        <h2>Contact</h2>
                 {/* https://www.youtube.com/watch?v=_slzCWK2mZQ */}
 
-            </div>
+      </div>
 
 </section>
 

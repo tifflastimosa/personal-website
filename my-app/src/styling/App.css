@@ -59,7 +59,7 @@
 
 .navbar {
   background-color: white;
-  min-height: 70px;
+  min-height: 40px;
   display:flex;
   justify-content: space-between;
   align-items: center;
@@ -72,7 +72,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 60px;
- 
+  opacity: 100%;
 }
 
 .hamburger {
@@ -201,3 +201,43 @@
   }
 }
 
+@media (max-height: 700px) {
+  .sectionHeading {
+    margin-top: 60px;
+  }
+
+  .left {
+    float: center;
+  }
+
+  .right {
+    float: center;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  h3 {
+    margin-top: 600px;
+  }
+
+  .left {
+    width: auto !important;
+    height: 500px !important;
+    /* background-color: black; */
+    float: center !important;
+    margin-top: 600px;
+    margin-left: 5px;
+  }
+
+  .headshot {
+   display: none;  
+ }
+
+ .right {
+  display: none;
+ }
+
+
+}
