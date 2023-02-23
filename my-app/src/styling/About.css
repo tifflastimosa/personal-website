@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+  height: 700px;
+  /* background: aqua; */
+  margin: auto;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+.left {
+  width: 65%;
+  height: 200px;
+  /* background: red; */
+  float: left;
+  margin-top: 8px;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: left;
+}
+
+b {
+  color: #479B84;
+}
+
+p {
+  text-align: left;
+  color: black;
+}
+
+.right {
+  margin-left: 30%;
+  height: 200px;
+  /* background: black; */
+}
+
+img {
+  max-width: 40%;
+  border-radius: 20px;
+  opacity: 80%;
+  margin-top: 5px;
+};
+

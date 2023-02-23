@@ -1,13 +1,47 @@
+import "../styling/About.css"
 
 const About = () => {
 
+
+
     return (
         <section id="aboutSection" className="secondary-selection">
-            <h2>About Me</h2>
-            <p>
-                Lorem  ipsum dolor sit amet consectetur adipisicing e lit. Hic optio dolorum exercitationem, harum repellat
-                explicabo quis error excepturi porro soluta.
-            </p>
+            
+            <div className="container">
+
+                <h2>Hello!</h2>
+
+                <h3>My name is Tiffany and I design <b>impactful</b> software and <b>scalable</b> systems.</h3>
+
+                <div className="left">
+                    <p>
+                    Lorem  ipsum dolor sit amet consectetur adipisicing e lit. Hic optio dolorum exercitationem, harum repellat
+                    explicabo quis error excepturi porro soluta.
+                    </p>
+
+                    <p>
+                    Lorem  ipsum dolor sit amet consectetur adipisicing e lit. Hic optio dolorum exercitationem, harum repellat
+                    explicabo quis error excepturi porro soluta.
+                    </p>
+
+                    <p>
+                    Lorem  ipsum dolor sit amet consectetur adipisicing e lit. Hic optio dolorum exercitationem, harum repellat
+                    explicabo quis error excepturi porro soluta.
+                    </p>
+
+                    <p>
+                    Lorem  ipsum dolor sit amet consectetur adipisicing e lit. Hic optio dolorum exercitationem, harum repellat
+                    explicabo quis error excepturi porro soluta.
+                    </p>
+                </div>
+
+                <div className="right">
+                    <img src="images/about/circle-headshot.jpg" />                                   
+                </div>
+            
+            
+            </div>
+           
         </section>
     )
 }
