@@ -2,13 +2,14 @@ import "../styling/Projects.css";
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Button from 'react-bootstrap/Button'
+import { Image } from "react-bootstrap";
 
 const Projects = () => {
 
     
     return (
         
-        <section id="projectsSection" className="secondary-section" wrap="true">
+        <section className="projectsSection">
               <div className="cards">
               <h1 className="abouttitle">Projects</h1>
 
@@ -18,7 +19,7 @@ const Projects = () => {
 
                     <Card className="card">
                         {/* <Card.Img variant="top" src="images/distributed_systems/design.jpg" style={{ width: "100rem", alignContent: "center"}}/> */}
-                        <img src="images/distributed_systems/design.jpg" className="distributed" />
+                        <Image src="images/distributed_systems/design.jpg" className="distributed" />
                         <Card.Body>
                         <Card.Title>Ski Resort Distributed Systems</Card.Title>
                         <Card.Text className="description">
@@ -37,7 +38,7 @@ const Projects = () => {
                     </Card>
 
                     <Card>
-                        <img src="images/pettin/thumbnail.jpg" className="pettin" />
+                        <Image src="images/pettin/thumbnail.jpg" className="pettin" />
                         <Card.Body>
                         <Card.Title>PetTin</Card.Title>
                         <Card.Text className="description">
@@ -56,7 +57,7 @@ const Projects = () => {
                     </Card>
 
                     <Card>
-                        <img src="images/travel_hub/thumbnail.jpg" className="travel" />
+                        <Image src="images/travel_hub/thumbnail.jpg" className="travel" />
                         
                         <Card.Body>
                         <Card.Title>Travel Hub</Card.Title>
@@ -81,7 +82,7 @@ const Projects = () => {
                 <div className="second">
                 <CardGroup>
                     <Card>
-                        <img src="images/movie_time/thumbnail.jpg" className="movie" />
+                        <Image src="images/movie_time/thumbnail.jpg" className="movie" />
                         <Card.Body>
                         <Card.Title>Movie Time</Card.Title>
                         <Card.Text className="description">
@@ -99,7 +100,7 @@ const Projects = () => {
                     </Card>
 
                     <Card>
-                        <img src="images/book_it/thumbnail.jpg" className="bookit" />
+                        <Image src="images/book_it/thumbnail.jpg" className="bookit" />
                         <Card.Body>
                         <Card.Title>Let's Book It API</Card.Title>
                         <Card.Text className="description">
@@ -117,7 +118,7 @@ const Projects = () => {
                     </Card>
 
                     <Card>
-                        <img src="images/quantified_self/thumbnail.avif" className="quantified" />
+                        <Image src="images/quantified_self/thumbnail.avif" className="quantified" />
                         <Card.Body>
                         <Card.Title>Quantified Self Web Application</Card.Title>
                         <Card.Text className="description">

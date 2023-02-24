@@ -1,7 +1,18 @@
-.container {
+.projectsSection {
     width: 100% !important;
-    margin-top: 90px;
+}
+
+.cards {
     /* background-color: blue; */
+    /* margin-left: 10px !important; */
+}
+
+.cards .abouttitle {
+    margin-top: 0px !important;
+}
+
+.first {
+    margin-left: 15px;
 }
 
 .description {
@@ -28,6 +39,7 @@
 
 .second {
     margin-top: 5px;
+    margin-left: 15px;
 }
 
 .footer {

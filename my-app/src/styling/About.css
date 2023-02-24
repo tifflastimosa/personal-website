@@ -1,90 +1,74 @@
-.headshot {
+.imageAboutPage {
   width: 60%;
-  border-radius: 100px;
-  padding-top: 5px;
+  border-radius: 60px;
+  opacity: 90%;
 }
 
-.icons {
-  width: 5%;
-  padding-top: 20px;
-  margin-left: 20px;
+.about {
+  /* color: blue; */
+  margin-top: 50px;
+  /* background-color: grey; */
 }
 
-.abouttitle {
-  margin-top: -200px;
-  
-}
-
-.tl {
-  color: #479B84;
-}
-
-.info {
-  text-align: justify;
-  padding-right: 100px;
-}
-
-.se {
-  list-style-type: none;
-  font-size: 20px;
-  padding-bottom: 10px;
+#subheader {
+  background-color: green;
 }
 
 .skills {
   list-style-type: none;
 }
 
-.summary {
-  margin-top: 20px;
-}
+@media (max-width: 900px) {
 
-@media (max-width: 986px) {
-  .abouttitle {
-    margin-top: 200px; 
+  .about {
+    /* color: green; */
+    margin-top: 100px;
   }
 
-  .info {
-    text-align: left;
-    margin-left: 100px;
+  #subheader {
+    background-color: aqua;
   }
 
-  .headshot {
-    width: 30%;
-  }
-
-}
-
-@media (max-width: 450px) {
-  .abouttitle {
-    margin-top: 200px; 
-  }
-
-  .info {
-    text-align: left;
-    margin-left: 100px;
-  }
-
-  .headshot {
-    width: 30%;
-  }
-
-}
-
-@media (max-height: 620px) {
-  .abouttitle {
-    margin-top: 300px; 
-  }
-/* 
-  .info {
-    text-align: left;
-    margin-left: 100px;
-  }
-
-  .headshot {
-    width: 30%;
+  /* #subheader {
+    background-color: aqua;
   } */
 
+  .imageAboutPage {
+    max-width: 60%;
+    margin-top: -160px;
+    border-radius: 60px;
+    /* opacity: 10%; */
+  }
+
+  #aboutparagraph {
+    margin-left: 10px;
+    text-align: justify;
+  }
+
 }
 
+@media (min-width: 375px) {
+  .about {
+    padding-top: 200px !important;
+    /* color: blue; */
+    
+  }
 
+  #subheader {
+    margin-top: -250px;
+    /* background-color: purple; */
+  }
 
+  #aboutparagraph {
+    margin-left: 10px;
+    text-align: justify;
+  }
+
+  .imageAboutPage {
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 60px;
+    margin-left: 10px;
+    /* margin-right: auto; */
+  }
+}
