@@ -13,7 +13,7 @@
   font-weight: 700;
   font-size: 80px !important;
   margin-left: 2%;
-  color: black !important;
+  color: grey !important;
   text-decoration: none;
 }
 
@@ -41,11 +41,12 @@
 }
 
 .header {
-  background: white;
+  /* background: white; */
   color: black;
   padding: 1rem;
   position: fixed;
   width: 100%;
+  z-index: 9;
 }
 
 .header {
@@ -54,11 +55,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
+  z-index: 9;
+  /* background-color: white; */
 }
 
 .navbar {
-  background-color: white;
+  /* background-color: white; */
   min-height: 40px;
   display:flex;
   justify-content: space-between;
@@ -67,12 +69,14 @@
 }
 
 .nav-menu {
-  background-color: white;
+  /* background-color: blue; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
   opacity: 100%;
+  z-index: 9;
+  margin-right: 50px;
 }
 
 .hamburger {
@@ -123,6 +127,7 @@
   transition: transform 1s ease;
 }
 
+/* responsive navigation bar */
 @media (max-width: 700px) {
   .hamburger {
     display: block;
@@ -150,7 +155,6 @@
     width: 100%;
     text-align: center;
     transition: 0.5s;
-    opacity: 90%;
   }
 
   .nav-links {
@@ -163,43 +167,19 @@
 
 }
 
-@media (max-width: 900px) {
-  .title {
-    font-family: 'Qwitcher Grypen';
-    font-style: bold;
-    font-weight: 700;
-    font-size: 60px !important;
-    margin-left: 2%;
-    color: black !important;
-    text-decoration: none;
-  }
-  
-}
-
 @media (max-width: 800px) {
   .title {
     font-family: 'Qwitcher Grypen';
     font-style: bold;
     font-weight: 700;
-    font-size: 50px !important;
+    font-size: 30px !important;
     margin-left: 2%;
-    color: black !important;
+    color: blue!important;
     text-decoration: none;
   }
   
 }
 
-@media (max-width: 400px) {
-  .title {
-    font-family: 'Qwitcher Grypen';
-    font-style: bold;
-    font-weight: 700;
-    font-size: 50px !important;
-    margin-left: 2%;
-    color: black !important;
-    text-decoration: none;
-  }
-}
 
 @media (max-height: 700px) {
   .sectionHeading {
@@ -213,6 +193,7 @@
   .right {
     float: center;
   }
+
 
 }
 
@@ -231,13 +212,44 @@
     margin-left: 5px;
   }
 
-  .headshot {
-   display: none;  
- }
+
 
  .right {
   display: none;
  }
 
 
+
+}
+
+/* for the arrow on the bottom */
+.arrow{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.arrow span{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 3px solid grey;
+  border-right: 3px solid grey;
+  transform: rotate(45deg);
+  margin-top: 550px;
+  animation: animate 3.0s ease infinite;
+}
+
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
 }

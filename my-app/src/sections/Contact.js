@@ -1,20 +1,19 @@
 import Form from 'react-bootstrap/Form'
 import { Button } from 'react-bootstrap';
+import "../styling/Contact.css";
 
 const Contact = () => {
 
   return (
     
-    <section id="contactSection" className="secondary-selection">
-      <div className="container">
-        <h2>Contact</h2>
-                {/* https://www.youtube.com/watch?v=_slzCWK2mZQ */}
+  <section id="projectsSection" className="secondary-section" wrap="true">
+              <div className="cards">
+             
+            </div>
 
-      </div>
-
-</section>
+        </section>
 
   )
 }
 
-export default Contact;
+export default Contact

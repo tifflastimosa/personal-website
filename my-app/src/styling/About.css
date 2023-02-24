@@ -1,55 +1,90 @@
-.container {
-  width: 100%;
-  height: 700px;
-  /* background: aqua; */
-  margin: auto;
-  padding: 10px;
+.headshot {
+  width: 60%;
+  border-radius: 100px;
+  padding-top: 5px;
 }
 
-button {
-  border: none;
-  outline: none;
-  background-color: white;
+.icons {
+  width: 5%;
+  padding-top: 20px;
+  margin-left: 20px;
 }
 
-.left {
-  width: 65%;
-  height: 200px;
-  /* background: red; */
-  float: left;
-  margin-top: 8px;
-  margin-left: 5px;
+.abouttitle {
+  margin-top: -200px;
+  
 }
 
-h2 {
-  text-align: left;
-}
-
-h3 {
-  text-align: left;
-}
-
-b {
+.tl {
   color: #479B84;
 }
 
-p {
-  text-align: left;
-  color: black;
+.info {
+  text-align: justify;
+  padding-right: 100px;
 }
 
-.right {
-  margin-left: 30%;
-  height: 200px;
-  /* background: black; */
+.se {
+  list-style-type: none;
+  font-size: 20px;
+  padding-bottom: 10px;
 }
 
-.headshot {
-  max-width: 40%;
-  border-radius: 20px;
-  opacity: 80%;
-  margin-top: 5px;
-  margin-left: 30px;
-};
+.skills {
+  list-style-type: none;
+}
+
+.summary {
+  margin-top: 20px;
+}
+
+@media (max-width: 986px) {
+  .abouttitle {
+    margin-top: 200px; 
+  }
+
+  .info {
+    text-align: left;
+    margin-left: 100px;
+  }
+
+  .headshot {
+    width: 30%;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .abouttitle {
+    margin-top: 200px; 
+  }
+
+  .info {
+    text-align: left;
+    margin-left: 100px;
+  }
+
+  .headshot {
+    width: 30%;
+  }
+
+}
+
+@media (max-height: 620px) {
+  .abouttitle {
+    margin-top: 300px; 
+  }
+/* 
+  .info {
+    text-align: left;
+    margin-left: 100px;
+  }
+
+  .headshot {
+    width: 30%;
+  } */
+
+}
+
 
 

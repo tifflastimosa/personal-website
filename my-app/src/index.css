@@ -34,6 +34,13 @@ ul {
   list-style: none;
 }
 
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+
 section {
   display: flex;
   align-items: center;
@@ -46,4 +53,5 @@ section h2 {
   font-size: 60px;
   margin-top: 60px;
 }
+
 

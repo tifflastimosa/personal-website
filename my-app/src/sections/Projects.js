@@ -9,8 +9,9 @@ const Projects = () => {
     return (
         
         <section id="projectsSection" className="secondary-section" wrap="true">
-            <div className="container">
-                <h2>Recent Projects</h2>
+              <div className="cards">
+              <h1 className="abouttitle">Projects</h1>
+
 
                 <div className="first">
                 <CardGroup className="group">
@@ -136,6 +137,8 @@ const Projects = () => {
                 </div>
 
             </div>
+
+        
 
         </section>
     )
