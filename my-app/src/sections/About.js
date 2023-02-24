@@ -35,6 +35,11 @@ const About = () => {
                         <li className="skills"><b>IDE | Technologies:</b> IntelliJ, VS Code, Postman, Git, GitHub, Heroku, AWS, RabbitMQ, Linux, APIs</li>          
                         <li className="skills"><b>Process:</b> Agile Methodology, Scrum, Test Driven Development, Unit Testing, API Testing</li>             
                         </p>
+                        <p className="summary"> I love providing solutions to problems! Instead of providing solutions as a Paralegal, I am now providing solutions 
+                        as a Software Engineer!</p>
+
+                        <p className="summary">As a recent graduate, I am looking for opportunities in fullstack and backend development. 
+                        </p>
                     </div>
                 </div>
             </div>
