@@ -1,6 +1,4 @@
 import "../styling/Home.css"
-import { useRef } from "react"
-import About from '../sections/About'
 
 const Home = () => {
 
