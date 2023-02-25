@@ -74,7 +74,7 @@ function App() {
       </div>
 
       <div ref={projects} className="projects">
-        {/* <Projects /> */}
+        <Projects />
       </div>
       
       {/* <div ref={contact} className="contact">

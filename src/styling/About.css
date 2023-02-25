@@ -1,42 +1,67 @@
-.imageAboutPage {
-  width: 60%;
-  border-radius: 60px;
-  opacity: 90%;
+.imageme {
+  opacity: 90% !important;
+  border-radius: 5%;
+  width: 75% !important;
 }
 
 .about {
   /* color: blue; */
-  margin-top: 50px;
-  /* background-color: grey; */
+  margin-top: -150px;
 }
 
-#subheader {
-  background-color: green;
+#aboutmeheader {
+  /* color: blue; */
+}
+
+.tiffany {
+  /* background-color: blue; */
+  text-align: left;
+  margin-bottom: -5px;
+}
+
+.subheader {
+  /* background-color: green; */
+  margin-left: -120px;
 }
 
 .skills {
   list-style-type: none;
 }
 
-@media (max-width: 900px) {
+.icons {
+  width: 4%;
+}
+
+ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.icons:hover{
+  opacity: 80%;
+}
+
+/* responsive - smaller monitors */
+@media (max-width: 1000px) {
 
   .about {
     /* color: green; */
-    margin-top: 100px;
+    margin-top: 120px;
+    justify-content: center;
   }
 
-  #subheader {
-    background-color: aqua;
+  .tiffany {
+    /* background-color: aqua; */
+    /* border: solid; */
+    /* margin-left: 25px;
+    margin-top: 8px;
+    text-align: left !important; */
   }
 
-  /* #subheader {
-    background-color: aqua;
-  } */
-
-  .imageAboutPage {
+  .imageme {
     max-width: 60%;
-    margin-top: -160px;
-    border-radius: 60px;
+    /* margin-top: -160px; */
+    margin-left: 40px; 
     /* opacity: 10%; */
   }
 
@@ -47,16 +72,19 @@
 
 }
 
+/* responsive - mobile view */
 @media (min-width: 375px) {
   .about {
-    padding-top: 200px !important;
+    padding-top: 275px;
     /* color: blue; */
-    
   }
 
-  #subheader {
-    margin-top: -100px;
-    /* background-color: purple; */
+  .tiffany {
+    /* background-color: aqua; */
+    /* border: solid; */
+    margin-left: 25px;
+    margin-top: 8px;
+    /* text-align: center; */
   }
 
   #aboutparagraph {
@@ -64,11 +92,13 @@
     text-align: justify;
   }
 
-  .imageAboutPage {
+  .imageme {
     width: 100%;
     margin-top: 5px;
-    border-radius: 60px;
-    margin-left: 10px;
-    /* margin-right: auto; */
+    margin-left: 22px;
+  }
+
+  .icons {
+    /* width: 5%; */
   }
 }

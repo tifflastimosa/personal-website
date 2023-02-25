@@ -1,14 +1,19 @@
 .projectsSection {
     width: 100% !important;
+    margin-top: -50px;
+}
+
+.group {
+    /* border: solid; */
 }
 
 .cards {
-    /* background-color: blue; */
-    /* margin-left: 10px !important; */
+    /* border: solid; */
 }
 
 .cards .abouttitle {
-    margin-top: 0px !important;
+    /* margin-top: 0px !important;
+    background-color: blue; */
 }
 
 .first {
@@ -53,6 +58,7 @@
 
 .group {
     justify-content: space-between;
+    /* background-color: aqua; */
 }
 
 .card {
@@ -109,3 +115,21 @@
     margin-top: 10px;
 }
 
+/* responsive - smaller monitors */
+@media (max-width: 1000px) {
+
+
+  
+  }
+  
+  /* responsive - mobile view */
+  @media (max-width: 375px) {
+    .projectsSection {
+        margin-top: 1800px;
+    }
+    
+    
+
+
+
+  }

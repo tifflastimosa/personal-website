@@ -11,9 +11,8 @@
   font-family: 'Qwitcher Grypen';
   font-style: bold;
   font-weight: 700;
-  font-size: 80px !important;
+  font-size: 70px !important;
   margin-left: 2%;
-  color: grey !important;
   text-decoration: none;
 }
 
@@ -21,20 +20,18 @@
   text-align: center;
 }
 
+/* about section height */
 .about {
   height: 400px;
 }
 
+/* projects section height */
 .projects {
   margin-top: 600px;
   height: 600px;
 }
 
-.resume {
-  margin-top: 600px;
-  height: 600px;
-}
-
+/* contact section height */
 .contact {
   margin-top: 600px;
   height: 600px;
@@ -50,17 +47,19 @@
 }
 
 .header {
+  /* background-color: aqua; */
   max-width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 9;
-  /* background-color: white; */
+  height: 80px;
+  padding-top: 10px;
 }
 
 .navbar {
-  /* background-color: white; */
+  /* background-color: blue; */
   min-height: 40px;
   display:flex;
   justify-content: space-between;
@@ -128,7 +127,7 @@
 }
 
 /* responsive navigation bar */
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .hamburger {
     display: block;
   }
@@ -148,13 +147,14 @@
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 100px;
+    top: 80px;
     gap: 0;
     flex-direction: column;
     background-color: white;
     width: 100%;
     text-align: center;
     transition: 0.5s;
+    /* background-color: #479B84; */
   }
 
   .nav-links {
