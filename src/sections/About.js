@@ -45,8 +45,8 @@ const About = () => {
                         <p>Please feel free to connect with me on LinkedIn or at lastimosa.ti@gmail.com.</p>
 
                         <ul>
-                            <li><a href="mailto:lastimosa.ti@gmail.com"><Image src="images/icons/github.png" className="icons" /></a></li>
-                            <li><a href="mailto:lastimosa.ti@gmail.com"><Image src="images/icons/linkedin.png" className="icons" /></a></li>
+                            <li><a href="https://github.com/tifflastimosa" target="_new"><Image src="images/icons/github.png" className="icons" /></a></li>
+                            <li><a href="https://www.linkedin.com/in/tiffanylast" target="_new"><Image src="images/icons/linkedin.png" className="icons" /></a></li>
                             <li><a href="mailto:lastimosa.ti@gmail.com"><Image src="images/icons/mail.png" className="icons" /></a></li>
                         </ul>
                     </div>

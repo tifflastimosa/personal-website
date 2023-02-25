@@ -6,6 +6,9 @@ import { Image } from "react-bootstrap";
 
 const Projects = () => {
 
+    const openDSReport = () => {
+        window.open("images/distributed_systems/distributedsystems.pdf","_blank");
+    }
     
     return (
         
@@ -31,8 +34,8 @@ const Projects = () => {
                         </Card.Body>
                         <Card.Footer className="footer">
                             <small>
-                                <Button className="footer" variant="outline-primary" href="https://github.com/tifflastimosa/a3-distributed-systems-data-layer" target="_blank">GitHub</Button>
-                                <Button className="footer" variant="outline-primary">Report</Button>
+                                <Button className="footer" variant="outline-primary" href="https://github.com/tifflastimosa/a3-distributed-systems-data-layer" target="_new">GitHub</Button>
+                                <Button className="footer" variant="outline-primary" onClick={() => openDSReport()}>Report</Button>
                             </small>
                         </Card.Footer>
                     </Card>
@@ -50,8 +53,8 @@ const Projects = () => {
                         </Card.Body>
                         <Card.Footer className="footer">
                             <small>
-                                <Button className="footer" variant="outline-primary">GitHub</Button>
-                                <Button className="footer" variant="outline-primary">Demo</Button>
+                                <Button className="footer" href="https://github.com/tifflastimosa/PetTin" variant="outline-primary" target="_new">GitHub</Button>
+                                <Button className="footer" href="https://youtu.be/CBWKnenheBY?t=269" variant="outline-primary" target="_new">Demo</Button>
                             </small>
                         </Card.Footer>
                     </Card>
@@ -70,8 +73,8 @@ const Projects = () => {
                         </Card.Body>
                         <Card.Footer className="footer">
                             <small>
-                                <Button className="footer" variant="outline-primary">GitHub</Button>
-                                <Button className="footer" variant="outline-primary">Demo</Button>
+                                <Button className="footer" href="https://github.com/tifflastimosa/TravelHub" variant="outline-primary" target="_new">GitHub</Button>
+                                <Button className="footer" href="https://youtu.be/CBWKnenheBY" variant="outline-primary" target="_new">Demo</Button>
                             </small>
                         </Card.Footer>
                     </Card>
@@ -93,9 +96,9 @@ const Projects = () => {
                         </Card.Text>
                         </Card.Body>
                         <small>
-                                <Button className="footer" variant="outline-primary">GitHub</Button>
-                                <Button className="footer" variant="outline-primary">Demo</Button>
-                            </small>
+                                {/* <Button className="footer" variant="outline-primary">GitHub</Button> */}
+                                <Button className="footer" href="https://youtu.be/CBWKnenheBY?t=173" variant="outline-primary" target="_new">Demo</Button>
+                        </small>
 
                     </Card>
 
@@ -112,8 +115,8 @@ const Projects = () => {
                         </Card.Text>
                         </Card.Body>
                         <small>
-                                <Button className="footer" variant="outline-primary">GitHub</Button>
-                                <Button className="footer" variant="outline-primary">API Documentation</Button>
+                                <Button className="footer" href="https://github.com/tifflastimosa/Book-It-Web-App" variant="outline-primary" target="_new">GitHub</Button>
+                                <Button className="footer" href="https://documenter.getpostman.com/view/16498854/UyrHeshz" variant="outline-primary" target="_new">API Documentation</Button>
                         </small>
                     </Card>
 
@@ -129,8 +132,7 @@ const Projects = () => {
                         </Card.Text>
                         </Card.Body>
                         <small>
-                                <Button className="footer" variant="outline-primary">GitHub</Button>
-                                <Button className="footer" variant="outline-primary">Demo</Button>
+                                <Button className="footer" href="https://github.com/tifflastimosa/QuantifiedSelfWebApp" variant="outline-primary" target="_new">GitHub</Button>
                             </small>
                     </Card>
                     
