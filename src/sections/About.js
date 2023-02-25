@@ -42,12 +42,12 @@ const About = () => {
                         <p className="summary">Outside of Software Engineering, I love hanging out with my dog named Gizmo, playing tennis, playing board games, and traveling to new places with my friends and 
                         family. </p>
 
-                        <p>Please feel free to connect with me on LinkedIn or at lastimosa.ti@gmail.com.</p>
+                        <p>Please feel free to connect with me on <a href="https://www.linkedin.com/in/tiffanylast" target="_new">LinkedIn</a> or at <a href="mailto:lastimosa.ti@gmail.com">lastimosa.ti@gmail.com.</a></p>
 
                         <ul>
                             <li><a href="https://github.com/tifflastimosa" target="_new"><Image src="images/icons/github.png" className="icons" /></a></li>
                             <li><a href="https://www.linkedin.com/in/tiffanylast" target="_new"><Image src="images/icons/linkedin.png" className="icons" /></a></li>
-                            <li><a href="mailto:lastimosa.ti@gmail.com"><Image src="images/icons/mail.png" className="icons" /></a></li>
+                            <li><a href="mailto:lastimosa.ti@gmail.com"><Image src="images/icons/mail.png" className="icons"/></a></li>
                         </ul>
                     </div>
                 </div>
