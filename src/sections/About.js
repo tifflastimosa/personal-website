@@ -32,12 +32,12 @@ const About = () => {
                         <li className="skills"><b>IDE | Technologies:</b> IntelliJ, VS Code, Postman, Git, GitHub, Heroku, AWS, RabbitMQ, Linux, APIs</li>          
                         <li className="skills"><b>Process:</b> Agile Methodology, Scrum, Test Driven Development, Unit Testing, API Testing</li>             
                         </p>
-                        <p className="summary">I am a former Paralegal turned Software Engineer! I graduated December 2022 with a master's degree in computer science and currently seeking opportunities in fullstack 
+                        <p className="summary">I am a former Paralegal turned Software Engineer! I graduated in December 2022 with a master's degree in computer science and currently seeking opportunities in fullstack 
                         and backend development.
                         </p>
 
                         <p className="summary">My career transition began when I implemented case management software to automate document drafting, reduce duplicate information, and
-                        integrate data sharing to improve workflow and efficiency. Through this experience I found my passion for creating impactful software. </p>
+                        integrate data sharing to improve workflow and efficiency. Through this experience, I found my passion for creating impactful software. </p>
 
                         <p className="summary">Outside of Software Engineering, I love hanging out with my dog named Gizmo, playing tennis, playing board games, and traveling to new places with my friends and 
                         family. </p>
