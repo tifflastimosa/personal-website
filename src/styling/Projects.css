@@ -120,16 +120,13 @@
 
 
   
+}
+
+/* responsive - mobile view */
+@media (min-width: 375px) {
+  .projectsSection {
+      margin-top: 1600px;
   }
+}
   
-  /* responsive - mobile view */
-  @media (max-width: 375px) {
-    .projectsSection {
-        margin-top: 1800px;
-    }
-    
-    
-
-
-
-  }
+  
