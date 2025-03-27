@@ -47,9 +47,9 @@ function App() {
               <ul className="nav-menu">
 
                 <li className="nav-link" onClick={() => scrollToSection(home)}>Home</li>
-                <li className="nav-link" onClick={() => scrollToSection(about)}>About</li>
-                <li className="nav-link" onClick={() => scrollToSection(projects)}>Projects</li>
-                <li className="nav-link" onClick={() => openPDF()}>Resume</li>
+                {/* <li className="nav-link" onClick={() => scrollToSection(about)}>About</li> */}
+                {/*<li className="nav-link" onClick={() => scrollToSection(projects)}>Projects</li> */}
+                {/*<li className="nav-link" onClick={() => openPDF()}>Resume</li> */}
                 {/* <li className="nav-link" onClick={() => scrollToSection(contact)}>Contact</li> */}
               
               </ul>
@@ -69,7 +69,7 @@ function App() {
         <div class="arrow"><span class="bounce" onClick={() => scrollToSection(about)}></span></div>
       </div>
 
-      <div ref={about} className="about">
+      {/*<div ref={about} className="about">
         <About />
       </div>
 
@@ -77,7 +77,7 @@ function App() {
         <Projects />
       </div>
       
-      {/* <div ref={contact} className="contact">
+      <div ref={contact} className="contact">
         <Contact />
       </div> */}
 
