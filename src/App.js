@@ -1,9 +1,9 @@
 import './styling/App.css';
 import { useRef } from "react"
 import "bootswatch/dist/minty/bootstrap.min.css"
-import Home from './sections/Home';
-import About from './sections/About'
-import Projects from './sections/Projects';
+// import Home from './sections/Home';
+// import About from './sections/About'
+// import Projects from './sections/Projects';
 import "../src/styling/App.css"
 
 
@@ -33,9 +33,9 @@ function App() {
 
   };
 
-  const openPDF = () => {
-    window.open("images/resume/resume.pdf","_blank");
-  }
+  //const openPDF = () => {
+  //  window.open("images/resume/resume.pdf","_blank");
+  //}
 
 
   return (
