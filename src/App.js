@@ -10,8 +10,8 @@ import "../src/styling/App.css"
 function App() {
 
   const home = useRef(null);
-  const about = useRef(null);
-  const projects = useRef(null);
+  // const about = useRef(null);
+  // const projects = useRef(null);
   // const resume = useRef(null);
   // const contact = useRef(null);
 
@@ -66,7 +66,7 @@ function App() {
 
       <div ref={home} className="home">
         <Home />
-        <div class="arrow"><span class="bounce" onClick={() => scrollToSection(about)}></span></div>
+        {/*<div class="arrow"><span class="bounce" onClick={() => scrollToSection(about)}></span></div>*/}
       </div>
 
       {/*<div ref={about} className="about">
